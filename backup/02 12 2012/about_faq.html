@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+<!-- the "no-js" class is for Modernizr. -->
+
+	<head class="html5reset-kitchensink-commented">
+
+		<meta charset="utf-8" />
+	
+		<!-- This prevents the conditional comments below from holding up the page load
+			 www.phpied.com/conditional-comments-block-downloads/ -->
+		<!--[if IE]><![endif]-->
+	
+		<title>Envitrum index</title>
+	
+		<meta name="description" content="Envitrum description." />
+		<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+		<meta name="author" content="Envitrum" />
+		<meta name="copyright" content="Copyright Envitrum 2011. All Rights Reserved." />
+
+		<meta name="google-site-verification" content="" />
+		<!-- Speaking of Google, don&#8217;t forget to set your site up: http://google.com/webmasters -->
+	
+		<link rel="icon" type="image/png" href="http://www.envitrum.com/favicon.png" />
+		<!-- This is the traditional favicon.
+			 - size: 16x16 or 32x32
+			 - transparency is OK
+			 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+	
+		<link rel="stylesheet" href="css/main.css" />
+		<!-- main.css is a gateway file. You will spend your time in core.css -->
+	
+		<link rel="stylesheet" href="css/_print/main.css" media="print" />
+	
+		<!-- These are IE-specific conditional style sheets. 
+			 You might consider removing the ones you don&#8217;t end up using. -->
+		 
+		<!--[if IE]>
+		<link rel="stylesheet" href="css/patches/win-ie-all.css" />
+		<![endif]-->
+		<!--[if IE 7]>
+		<link rel="stylesheet" href="css/patches/win-ie7.css" />
+		<![endif]-->
+		<!--[if lt IE 7]>
+		<link rel="stylesheet" href="css/patches/win-ie-old.css" />
+		<![endif]-->
+	
+		<!-- Either Modernizr OR the HTML5 Shiv script is required if you want IE compatability, AND you want to use the new, 
+			 more-semantic HTML5 elements (header, article, footer, etc) 
+			 - we&#8217;ve only included Modernizr; HTML5 Shiv can be found here: http://html5shiv.googlecode.com -->
+	
+		<!-- MODERNIZR: http://www.modernizr.com/ -->
+		<script type="text/javascript" src="javascript/modernizr-1.7.min.js"></script>
+	
+		<!-- Grab Google CDN&#8217;s jQuery. fall back to local if necessary -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+		<script type="text/javascript" src="javascript/jquery-ui-1.8.10.custom.min.js"></script>
+		<script type="text/javascript">!window.jQuery && document.write(unescape('%3Cscript src="javascript/jquery-1.5.min.js"%3E%3C/script%3E'))</script>
+		<script type="text/javascript" src="javascript/functions.js"></script>
+
+		<!-- Dynamically load static content -->
+		<script type="text/javascript">
+			$(document).ready(function () {
+				loadStaticContent();
+
+				
+				$('.faqBox').click(function(eventObject){
+					$(eventObject.currentTarget).find('.faqAnswer').toggle();
+					
+					if($(eventObject.currentTarget).find('.faqAnswer').css('display') == 'inline'){
+						$(eventObject.currentTarget).find('.faqQuestion').addClass('greenText');
+						$(eventObject.currentTarget).find('.faqQuestion').removeClass('whiteText');
+						
+						$(eventObject.currentTarget).removeClass('greenBg')
+						$(eventObject.currentTarget).addClass('whiteBg')
+						
+						$(eventObject.currentTarget).find('.underline').removeClass('whiteBg')
+						$(eventObject.currentTarget).find('.underline').addClass('greenBg')
+					}else{
+						$(eventObject.currentTarget).find('.faqQuestion').addClass('whiteText');
+						$(eventObject.currentTarget).find('.faqQuestion').removeClass('greenText');
+						
+						$(eventObject.currentTarget).removeClass('whiteBg')
+						$(eventObject.currentTarget).addClass('greenBg')
+						
+						$(eventObject.currentTarget).find('.underline').addClass('whiteBg')
+						$(eventObject.currentTarget).find('.underline').removeClass('greenBg')
+					}
+				});
+			});
+		</script>
+
+	</head>
+	<body id="about">
+		<header>
+		</header>
+		<nav>
+			<ul class="main">
+				<li><a href="index.html">home</a></li>
+				<li class="selected"><div class="arrow"></div>about</li>
+				<li><a href="technology.html">technology</a></li>
+				<li><a href="news.html">news</a></li>
+				<li><a href="team.html">team</a></li>
+				<li><a href="contact.html">contact</a></li>
+			</ul>
+			<ul class="sub">
+				<li><a href="about_what.html">what we do.</a></li>
+				<li><a href="about_why.html">why does it matter?</a></li>
+				<li><a href="about_how.html">how does it work?</a></li>
+				<!--<li><a href="about_traction.html">traction</a></li>-->
+				<li class="selected">frequently asked questions</li>
+			</ul>
+			<div class="greenLine"/>
+		</nav>
+		<section class="about">
+			<span class="title">frequently asked questions</span>
+			<div class="faqBox greenBg" style="">
+				<span class="faqQuestion whiteText"><span class="number">01</span>why doesn&#8217;t the glass we put in our recycling bins actually get recycled?</span>
+				<span class="underline whiteBg"></span>
+				<span class="faqAnswer greenText" style="display:none;">
+Making new glass products out of old ones is a very expensive and inefficient process. Currently, it takes very high quality raw materials that are clear and free of contaminants. And yes, colored glass is considered a contaminant in many production lines. Sorting and cleaning the waste glass is also very expensive.</span>
+			</div>
+			<div class="faqBox greenBg" style="">
+				<span class="faqQuestion whiteText"><span class="number">02</span>how do contaminants affect our process? </span>
+				<span class="underline whiteBg"></span>
+				<span class="faqAnswer greenText" style="display:none;">
+Our process can integrate the contaminants with no adverse affects on the final product. Compatible contaminants include impurities such as paper, ceramics, metals, adhesives, and even colored glass. </span>
+			</div>
+			<div class="faqBox greenBg" style="">
+				<span class="faqQuestion whiteText"><span class="number">03</span>will we run out of raw materials? </span>
+				<span class="underline whiteBg"></span>
+				<span class="faqAnswer greenText" style="display:none;">
+No! Over 8.4 million tons of glass is sent to the landfills annually (EPA 2010). That&#8217;s enough raw material to face over 35,000 10-story buildings every year.			</div>
+			<div class="faqBox greenBg" style="">
+				<span class="faqQuestion whiteText"><span class="number">04</span>why makes VitroBrick unique?</span>
+				<span class="underline whiteBg"></span>
+				<span class="faqAnswer greenText" style="display:none;">
+VitroBrick is a multi-faceted, extremely adaptable material, and while it is difficult to qualify the many unique attributes it does possess over standard building products, we will attempt to enumerate the most important: 
+<ol>
+<li type="a">VitroBrick is not simply a clay brick with glass added as a flux. It&#8217;s truly a recycled glass product that contains over 95% waste glass. </li>
+<li type="a">VitroBrick is one of the greenest products on the market to date. It makes it that much easier for green building professionals seeking to earn more LEED points in more categories.</li>
+<li type="a">VitroBrick has unsurpassed capillary suction forces. There is no other material on the market that can soak up and retain water while remaining structurally robust.</li>
+<li type="a">VitroBrick can be customized to fit the application; whether it is the size, color, or function.</li></ol></span>
+			</div>
+			<div class="faqBox greenBg" style="">
+				<span class="faqQuestion whiteText"><span class="number">05</span>won&#8217;t your building get wet?</span>
+				<span class="underline whiteBg"></span>
+				<span class="faqAnswer greenText" style="display:none;">
+				No! We can apply standard surface coatings to one or more surfaces, so that they&#8217;re sealed. We can also adjust our manufacturing process to produce a completely non-porous product.</div>
+			<div class="faqBox greenBg" style="">
+				<span class="faqQuestion whiteText"><span class="number">06</span>how strong is VitroBrick and what happens when our products freeze?</span>
+				<span class="underline whiteBg"></span>
+				<span class="faqAnswer greenText" style="display:none;">
+				 Lab testing shows that the VitroBrick is 30% stronger than required by building standards. Initial testing has shown that VitroBrick will withstand natural freeze/thaw cycles without any compromise to its strength or appearance.</div>
+			<div class="faqBox greenBg" style="">
+				<span class="faqQuestion whiteText"><span class="number">07</span>won&#8217;t VitroBrick break like regular glass? How do you replace one if it does?</span>
+				<span class="underline whiteBg"></span>
+				<span class="faqAnswer greenText" style="display:none;">
+				 Our process gives the VitroBrick a unique internal structure. This crucial structure actually helps control internal micro-defects and prevents the formation of cracks. But of course under the right conditions every material will break. It can be replaced just like red brick, if necessary.</div>
+			<div class="faqBox greenBg" style="">
+				<span class="faqQuestion whiteText"><span class="number">08</span>is our technology protected? </span>
+				<span class="underline whiteBg"></span>
+				<span class="faqAnswer greenText" style="display:none;">
+				 Yes! The unique blend of binding agents used in our process is a trade secret. Plus our manufacturing process and a myriad of novel applications are patent-pending.</div>
+			<div class="faqBox greenBg" style="">
+				<span class="faqQuestion whiteText"><span class="number">09</span>what is ASTM? how does a product meet ASTM standards?</span>
+				<span class="underline whiteBg"></span>
+				<span class="faqAnswer greenText" style="display:none;">
+				 The American Society for Testing and Standards, now known as ASTM International, is a world leader in standardization. After formal in-house laboratory testing is completed, the results are verified at an ASTM Certified, 3rd party laboratory.</div>
+			<div class="faqBox greenBg" style="">
+				<span class="faqQuestion whiteText"><span class="number">10</span>will VitroBrick meet ASTM standards?</span>
+				<span class="underline whiteBg"></span>
+				<span class="faqAnswer greenText" style="display:none;">
+				 Yes! In-house laboratory testing shows that our products already meet most of the necessary requirements for non-structural masonry!</div>
+		</section>
+		<footer>
+		</footer>
+	</body>
+</html>
