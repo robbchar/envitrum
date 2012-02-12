@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+<!-- the "no-js" class is for Modernizr. -->
+
+	<head class="html5reset-kitchensink-commented">
+
+		<meta charset="utf-8" />
+	
+		<!-- This prevents the conditional comments below from holding up the page load
+			 www.phpied.com/conditional-comments-block-downloads/ -->
+		<!--[if IE]><![endif]-->
+	
+		<title>Envitrum index</title>
+	
+		<meta name="description" content="Envitrum description." />
+		<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+		<meta name="author" content="Envitrum" />
+		<meta name="copyright" content="Copyright Envitrum 2011. All Rights Reserved." />
+
+		<meta name="google-site-verification" content="" />
+		<!-- Speaking of Google, don&#8217;t forget to set your site up: http://google.com/webmasters -->
+	
+		<link rel="icon" type="image/png" href="http://www.envitrum.com/favicon.png" />
+		<!-- This is the traditional favicon.
+			 - size: 16x16 or 32x32
+			 - transparency is OK
+			 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+	
+		<link rel="stylesheet" href="css/main.css" />
+		<!-- main.css is a gateway file. You will spend your time in core.css -->
+	
+		<link rel="stylesheet" href="css/_print/main.css" media="print" />
+	
+		<!-- These are IE-specific conditional style sheets. 
+			 You might consider removing the ones you don&#8217;t end up using. -->
+		 
+		<!--[if IE]>
+		<link rel="stylesheet" href="css/patches/win-ie-all.css" />
+		<![endif]-->
+		<!--[if IE 7]>
+		<link rel="stylesheet" href="css/patches/win-ie7.css" />
+		<![endif]-->
+		<!--[if lt IE 7]>
+		<link rel="stylesheet" href="css/patches/win-ie-old.css" />
+		<![endif]-->
+	
+		<!-- Either Modernizr OR the HTML5 Shiv script is required if you want IE compatability, AND you want to use the new, 
+			 more-semantic HTML5 elements (header, article, footer, etc) 
+			 - we&#8217;ve only included Modernizr; HTML5 Shiv can be found here: http://html5shiv.googlecode.com -->
+	
+		<!-- MODERNIZR: http://www.modernizr.com/ -->
+		<script type="text/javascript" src="javascript/modernizr-1.7.min.js"></script>
+	
+		<!-- Grab Google CDN&#8217;s jQuery. fall back to local if necessary -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+		<script type="text/javascript" src="javascript/jquery-ui-1.8.10.custom.min.js"></script>
+		<script type="text/javascript">!window.jQuery && document.write(unescape('%3Cscript src="javascript/jquery-1.5.min.js"%3E%3C/script%3E'))</script>
+		<script type="text/javascript" src="javascript/functions.js"></script>
+
+		<!-- Dynamically load static content -->
+		<script type="text/javascript">
+			$(document).ready(function () {
+				loadStaticContent();
+				
+				$('.contentBox').hover(function(eventObject){
+					$(eventObject.currentTarget).find('.contentBoxContent').toggle();
+					
+					if($(eventObject.currentTarget).find('.contentBoxContent').css('display') == 'inline'){
+						$(eventObject.currentTarget).find('.contentBoxTitle').addClass('greenText');
+						$(eventObject.currentTarget).find('.contentBoxTitle').removeClass('whiteText');
+						
+						$(eventObject.currentTarget).removeClass('greenBg')
+						$(eventObject.currentTarget).addClass('whiteBg')
+						
+						$(eventObject.currentTarget).find('.underline').removeClass('whiteBg')
+						$(eventObject.currentTarget).find('.underline').addClass('greenBg')
+					}else{
+						$(eventObject.currentTarget).find('.contentBoxTitle').addClass('whiteText');
+						$(eventObject.currentTarget).find('.contentBoxTitle').removeClass('greenText');
+						
+						$(eventObject.currentTarget).removeClass('whiteBg')
+						$(eventObject.currentTarget).addClass('greenBg')
+						
+						$(eventObject.currentTarget).find('.underline').addClass('whiteBg')
+						$(eventObject.currentTarget).find('.underline').removeClass('greenBg')
+					}
+				});
+			});
+		</script>
+
+	</head>
+	<body id="about">
+		<header>
+		</header>
+		<nav>
+			<ul class="main">
+				<li><a href="index.html">home</a></li>
+				<li class="selected"><div class="arrow"></div>about</li>
+				<li><a href="applications_where.html">applications</a></li>
+				<li><a href="news.html">news</a></li>
+				<li><a href="team_core.html">team</a></li>
+				<li><a href="contact.html">contact</a></li>
+			</ul>
+			<ul class="sub">
+				<li><a href="about_what.html">what we do.</a></li>
+				<li class="selected">why does it matter?</li>
+				<li><a href="about_how.html">how does it work?</a></li>
+				<!--<li><a href="about_traction.html">traction</a></li>-->
+			</ul>
+			<div class="greenLine"/>
+		</nav>
+		<section class="about">
+			<span class="title">why does it matter?</span>
+			<div class="contentBox greenBg" style="height:260px;">
+				<span class="contentBoxTitle whiteText">Environment</span>
+				<span class="underline whiteBg"></span>
+				<span class="contentBoxContent greenText" style="display:none;">VitroBrick products have a far smaller carbon footprint than red brick. This is the result of reduced energy consumption in production, our use of recycled rather than virgin materials, and the capacity to produce locally using existing manufacturing and distribution systems. EnVitrum&#8217;s patent pending process eliminates the need for extensive sorting and cleaning, which in turn reduces equipment requirements, energy consumption, and operating costs associated with glass recycling. Moreover, EnVitrum&#8217;s cradle-to-cradle process is compatible with closed-loop manufacturing, where materials can be reprocessed indefinitely, resulting in extremely sustainable product solutions.</span>
+			</div>
+			<div class="contentBox greenBg" style="height:200px;">
+				<span class="contentBoxTitle whiteText">Manufacturers</span>
+				<span class="underline whiteBg"></span>
+				<span class="contentBoxContent greenText" style="display:none;">Our material offers substantial advantages in terms of cost, versatility and sustainability. We developed our technology with masonry manufacturing in mind and VitroBrick can be produced with almost no change to existing manufacturing infrastructure. It contains of over 95% waste glass and our production process consumes nearly 80% less energy when compared with standard masonry products. This translates to lower production costs and higher profit margins.</span>
+			</div>
+			<div class="contentBox greenBg" style="height: 362px">
+				<span class="contentBoxTitle whiteText">Architects, Designers &amp; End-Users</span>
+				<span class="underline whiteBg"></span>
+				<span class="contentBoxContent greenText" style="display:none;">VitroBrick can be manufactured in a wide variety of shapes sizes and colors, based on your design specifications. Traditional applications include rain screens, interior and exterior facades and tiling, where VitroBrick&#8217;s high recycle content will earn your building LEED points. What really sets VitroBrick apart from conventional building materials is its unique internal structure. With small adjustments to our process, we can produce VitroBrick that has an uncanny ability to wick water upwards like a sponge and retain that water without any reduction in strength. This makes VitroBrick ideal for emerging cool roof, green roof and living wall designs. In these applications VitroBrick soaks up rain water or the building&#8217;s own gray water and delivers it to the surface where it dissipates heat through evaporation. VitroBrick can even be used as either a direct medium or a capillary layer to grow plants!. These advanced applications will lower energy cost and earn more LEED points. </span>
+			</div>
+		</section>
+		<footer>
+		</footer>
+	</body>
+</html>

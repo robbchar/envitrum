@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+<!-- the "no-js" class is for Modernizr. -->
+
+	<head class="html5reset-kitchensink-commented">
+
+		<meta charset="utf-8" />
+	
+		<!-- This prevents the conditional comments below from holding up the page load
+			 www.phpied.com/conditional-comments-block-downloads/ -->
+		<!--[if IE]><![endif]-->
+	
+		<title>Envitrum index</title>
+	
+		<meta name="description" content="Envitrum description." />
+		<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+		<meta name="author" content="Envitrum" />
+		<meta name="copyright" content="Copyright Envitrum 2011. All Rights Reserved." />
+
+		<meta name="google-site-verification" content="" />
+		<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+		<link rel="icon" type="image/png" href="http://www.envitrum.com/favicon.png" />
+		<!-- This is the traditional favicon.
+			 - size: 16x16 or 32x32
+			 - transparency is OK
+			 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+	
+		<link rel="stylesheet" href="css/main.css" />
+		<!-- main.css is a gateway file. You will spend your time in core.css -->
+	
+		<link rel="stylesheet" href="css/_print/main.css" media="print" />
+	
+		<!-- These are IE-specific conditional style sheets. 
+			 You might consider removing the ones you don't end up using. -->
+		 
+		<!--[if IE]>
+		<link rel="stylesheet" href="css/patches/win-ie-all.css" />
+		<![endif]-->
+		<!--[if IE 7]>
+		<link rel="stylesheet" href="css/patches/win-ie7.css" />
+		<![endif]-->
+		<!--[if lt IE 7]>
+		<link rel="stylesheet" href="css/patches/win-ie-old.css" />
+		<![endif]-->
+	
+		<!-- Either Modernizr OR the HTML5 Shiv script is required if you want IE compatability, AND you want to use the new, 
+			 more-semantic HTML5 elements (header, article, footer, etc) 
+			 - we've only included Modernizr; HTML5 Shiv can be found here: http://html5shiv.googlecode.com -->
+	
+		<!-- MODERNIZR: http://www.modernizr.com/ -->
+		<script type="text/javascript" src="javascript/modernizr-1.7.min.js"></script>
+	
+		<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+		<script type="text/javascript" src="javascript/jquery-ui-1.8.10.custom.min.js"></script>
+		<script type="text/javascript">!window.jQuery && document.write(unescape('%3Cscript src="javascript/jquery-1.5.min.js"%3E%3C/script%3E'))</script>
+		<script type="text/javascript" src="javascript/functions.js"></script>
+
+		<!-- Dynamically load static content -->
+		<script type="text/javascript">
+			$(document).ready(function () {
+				loadStaticContent();
+
+				$(".contentButton").click(function(eventObject){
+					
+					$(eventObject.currentTarget).parent().find('.popup').toggle();
+					$(eventObject.currentTarget).parent().find('.popup').draggable();
+					
+				});
+				
+				$('.greenClose').click(function(eventObject){
+					$(eventObject.currentTarget).parent().toggle();
+				});
+			});
+		</script>
+
+	</head>
+	<body id="about">
+		<header>
+		</header>
+		<nav>
+			<ul class="main">
+				<li><a href="index.html">home</a></li>
+				<li class="selected"><div class="arrow"></div>about</li>
+				<li><a href="applications_where.html">applications</a></li>
+				<li><a href="news.html">news</a></li>
+				<li><a href="team_core.html">team</a></li>
+				<li><a href="contact.html">contact</a></li>
+			</ul>
+			<ul class="sub">
+				<li><a href="about_what.html">what we do.</a></li>
+				<li><a href="about_why.html">why does it matter?</a></li>
+				<li class="selected">how does it work?</li>
+				<!--<li><a href="about_traction.html">traction</a></li>-->
+			</ul>
+			<div class="greenLine"/>
+		</nav>
+		<section class="about">
+			<span class="title">how does it work?</span>
+			<div class="mainContent">EnVitrum&#8217;s process is compatible with both post-consumer and post-industrial waste glass. Once the waste glass is diverted from the landfill, it&#8217;ll be processed by masonry manufacturing facilities using their existing equipment. In a nutshell, making a brick is like making a cake. You mix the raw materials together, put that mixture into a mold and bake it. But it&#8217;s a little more complicated. 
+Making VitroBrick uses the same established processes and equipment as those used in the masonry industry. In our case, crushed glass is combined with our trade secret blend of binding agents, formed into bricks, tiles or plates and this mixture is put through a complex, patent-pending, multi-stage firing process. 
+What comes out of the furnace differs greatly from your standard masonry product. VitroBrick is distinct in that it contains a highly complex, network of interconnected <span class="contentButton">micro-pores</span>.
+
+<div class="popup"><span class="popupTitle">What are micro-pores?</span><div class="greenClose"></div><span class="popupContent">&#8220;The micro-pores increase the mechanical toughness of the material, while reducing the overall weight. This means that, although they are made of glass, our products can perform like common building envelope materials, such as brick. More importantly, this porosity enables our products to be used in high performance applications like evaporative cooling fa&ccedil; ades or building skins, cool roofs, green roofs, living walls and more. This characteristic allows us to enter markets that traditional masonry products simply cannot touch. Our exclusive products will give architects and contractors the means to meet today&#8217;s LEED criterion, without significant changes to established building techniques.&#8221;</span></div></div>
+			
+		</section>
+		<footer>
+		</footer>
+	</body>
+</html>
