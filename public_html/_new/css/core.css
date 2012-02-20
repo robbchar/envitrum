@@ -425,10 +425,11 @@ div.contentBox span.contentBoxTitle{
 	font-weight:bold;
 }
 
-div.newsBox span.underline,
+
 div.faqBox span.underline,
 div.faqBoxWide span.underline,
-div.contentBox span.underline{
+div.contentBox span.underline,
+div.newsBox span.underline{
 	cursor: default;
 	display: block;
 	height: 1px;
@@ -438,7 +439,7 @@ div.contentBox span.underline{
 }
 
 div.newsBox span.underline{
-	background-color:#9BD41F;
+	background-color:#908e8f;
 }
 
 div.newsBox span.dateline{
@@ -450,6 +451,11 @@ div.newsBox span.subTitle{
 	color:#908e8f;
 	display:block;
 	margin-top: 5px;
+}
+
+div.newsBox span.subTitle a{
+	color: #9BD41F;
+	text-decoration:none;
 }
 
 div.newsBox span.newsContent{
