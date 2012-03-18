@@ -414,7 +414,8 @@ div.faqBox span.number{
 	display:block;
 }
 
-div.newsBox span.newsTitle{
+div.newsBox span.newsTitle,
+div.newsBox span.question{
 	color:#908e8f;
 }
 
@@ -447,7 +448,8 @@ div.newsBox span.dateline{
 	display:block;
 }
 
-div.newsBox span.subTitle{
+div.newsBox span.subTitle,
+div.newsBox span.answer{
 	color:#908e8f;
 	display:block;
 	margin-top: 5px;
@@ -465,6 +467,7 @@ div.newsBox span.newsContent{
 	line-height: 18px;
 }
 
+div.newsBox span.greenText,
 div.faqBox span.greenText,
 div.faqBoxWide span.greenText,
 div.contentBox span.greenText{
@@ -498,6 +501,7 @@ span.contentButton{
 }
 
 div.popup{
+    position:absolute;
 	display:none;
 	height: 190px;
 	width: 240px;

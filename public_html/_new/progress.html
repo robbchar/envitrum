@@ -53,28 +53,33 @@
 		<nav>
 			<ul class="main">
 				<li><a href="index.html">home</a></li>
-				<li class="selected"><div class="arrow"></div>about</li>
-				<li><a href="applications_where.html">applications</a></li>
-				<li><a href="news.html">news</a></li>
-				<li><a href="team_core.html">team</a></li>
+				<li><a href="technology.html">technology</a></li>
+				<li class="selected"><div class="arrow"></div>progress</li>
+				<li><a href="applications.html">applications</a></li>
+				<li><a href="aboutUs.html">about us</a></li>
 				<li><a href="contact.html">contact</a></li>
 			</ul>
 			<ul class="sub">
-				<li class="selected">what we do.</a></li>
-				<li><a href="about_why.html">why does it matter?</a></li>
-				<li><a href="about_how.html">how does it work?</a></li>
-				<!--<li><a href="about_traction.html">traction</a></li>-->
+				<li><a href="news.html">news</a></li>
+				<li class="selected">progress</li>
 			</ul>
 			<div class="greenLine"/>
 		</nav>
 		<section class="about">
-			<span class="title">what do we do?</span>
-			<div class="subTitle">EnVitrum is a product development company focusing on the advancement of building materials made from glass waste streams.</div>
-			<span class="content">In 2010, the EPA estimated that over 70% of the glass collected by municipal recycling facilities was not actually recycled; this equated to over 8 million tons of glass. We have pioneered a process that converts glass, regardless of color, shape, or contaminants, into a durable, porous building material that can be shaped to meet many architectural needs. Applications span the commercial, residential, and industrial building sectors. We call this material VitroBrick.</span>
+			<span class="title">progress</span>
+			<div class="newsBox">
+				<span class="contentBoxContent greenText">EnVitrum successfully transitioned from concept to alpha prototype in 3 months, using less than $4000 in grant funding. Our technology took the Grand Prize at the 2010 Environmental Innovation Challenge, while our commercialization strategy earned us the &ldquo;Best Clean Tech Award&rdquo; at the 2010 UW Business Plan Competition and national recognition as Semifinalists in the 2010 Cleantech Open competition.</span>
+			</div>
+			<div class="newsBox">
+				<span class="contentBoxContent greenText">Over the past 18 months, we have worked extensively with the UW Center for Commercialization (C4C) and the College of Engineering towards both business and technology development. In June of 2011, C4C filed an international patent application, for which EnVitrum holds the worldwide exclusive licensing option. This patent will protect our novel manufacturing process, as well as a number of applications for our innovative recycled glass material. We have also worked with over half a dozen MBA interns, who have assisted in further refining our business strategy. Their work has been focused on identifying target markets, establishing market sizes, evaluating a variety of revenue models and investigating supply chains.</span>
+            </div>
+			<div class="newsBox">
+				<span class="contentBoxContent greenText">We have continued to develop our technology and we are currently conducting research under two prestigious awards. The first is a UW C4C Commercialization Gap Fund grant that is focused on process optimization, manufacturing scale-up and preliminary mechanical testing. The second is a Phase I Small Business Research Innovation Grant awarded through the National Science Foundation. This research will culminate in a market-ready interior product that will be showcased in several collaborative projects undertaken with the global architecture firm Perkins+Will. At that point EnVitrum will be well poised to continue advancement into exterior product applications.</span>
+            </div>
 		</section>
 		<footer>
 		</footer>
-	
+		
 		<!-- Either Modernizr OR the HTML5 Shiv script is required if you want IE compatability, AND you want to use the new, 
 			 more-semantic HTML5 elements (header, article, footer, etc) 
 			 - we&#8217;ve only included Modernizr; HTML5 Shiv can be found here: http://html5shiv.googlecode.com -->
@@ -85,15 +90,14 @@
 		<!-- Grab Google CDN&#8217;s jQuery. fall back to local if necessary -->
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
 		<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
-		<script type="text/javascript">!window.jQuery && document.write(unescape('%3Cscript src="javascript/jquery-1.5.min.js"%3E%3C/script%3E&'))</script>
+		<script type="text/javascript">!window.jQuery && document.write(unescape('%3Cscript src="javascript/jquery-1.5.min.js"%3E%3C/script%3E'))</script>
 		<script type="text/javascript" src="javascript/functions.js"></script>
 
 		<!-- Dynamically load static content -->
 		<script type="text/javascript">
 			$(document).ready(function () {
 				loadStaticContent();
-
-				$(".draggable-boxes").draggable();
+				
 			});
 		</script>
 	</body>
