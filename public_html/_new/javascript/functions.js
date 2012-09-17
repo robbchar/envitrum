@@ -25,7 +25,7 @@ function loadStaticContent(){
 	// local
     //$("nav").load("./content/nav.html");
 	$("section.header").load("./content/header.html");
-	$("footer").load("./content/footer.html");
+	$("footer").load("./content/footer.html #content");
 	
 	// remote
     //$("nav").load("/content/nav.html");

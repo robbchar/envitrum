@@ -54,7 +54,7 @@
 			<ul class="main">
 				<li class="selected"><div class="arrow"></div>home</li>
 				<li><a href="technology.html">technology</a></li>
-				<li><a href="progress.html">progress</a></li>
+				<li><a href="news.html">progress</a></li>
 				<li><a href="applications.html">applications</a></li>
 				<li><a href="aboutUs.html">about us</a></li>
 				<li><a href="contact.html">contact</a></li>
@@ -62,7 +62,7 @@
 			<div class="greenLine"/>
 		</div>
 		</nav>
-		<section id="main" class="main">
+		<section class="main">
 			<div class="module-mission draggable-boxes">
 				Our Mission
 				<div class="nav-seperator"></div>
@@ -102,7 +102,7 @@
 			$(document).ready(function () {
 				loadStaticContent();
 
-				$(".draggable-boxes").draggable({ "stack": '.draggable-boxes', "containment": 'parent' });
+				$(".draggable-boxes").draggable();
 			});
 		</script>
 	</body>

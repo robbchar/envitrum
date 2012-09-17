@@ -55,8 +55,8 @@ body
 section.main
 {
 	display:block;
-	min-width:500px;
-	min-height:500px;
+	min-width:800px;
+	min-height:600px;
 	margin: 0 3px 3px 3px;
 	float:left;
 }
@@ -341,7 +341,7 @@ section.about div.subTitle{
 }
 
 section.about div.mainContent{
-	height:215px;
+	height:209px;
 	color: white;
 	margin-top: 10px;
 	background-color:#9BD41F;
