@@ -11,13 +11,13 @@
 			 www.phpied.com/conditional-comments-block-downloads/ -->
 		<!--[if IE]><![endif]-->
 	
-		<title>Envitrum index</title>
+		<title>Envitrum - Applications</title>
 	
 		<meta name="description" content="Envitrum description." />
 		<!-- Google will often use this as its description of your page/site. Make it good. -->
 	
 		<meta name="author" content="Envitrum" />
-		<meta name="copyright" content="Copyright Envitrum 2011. All Rights Reserved." />
+		<meta name="copyright" content="Copyright Envitrum 2012. All Rights Reserved." />
 
 		<meta name="google-site-verification" content="" />
 		<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
@@ -33,6 +33,13 @@
 	
 		<link rel="stylesheet" href="css/_print/main.css" media="print" />
 	
+		<!-- Either Modernizr OR the HTML5 Shiv script is required if you want IE compatability, AND you want to use the new, 
+			 more-semantic HTML5 elements (header, article, footer, etc) 
+			 - we've only included Modernizr; HTML5 Shiv can be found here: http://html5shiv.googlecode.com -->
+	
+		<!-- MODERNIZR: http://www.modernizr.com/ -->
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+	
 		<!-- These are IE-specific conditional style sheets. 
 			 You might consider removing the ones you don't end up using. -->
 		 
@@ -47,64 +54,57 @@
 		<![endif]-->
 
 	</head>
-	<body id="about">
+	<body id="applications" class="unselectable">
 		<header>
 		</header>
 		<nav>
 			<ul class="main">
 				<li><a href="index.html">home</a></li>
-				<li><a href="technology.html">technology</a></li>
+				<li><a href="technology_why.html">technology</a></li>
 				<li><a href="progress.html">progress</a></li>
 				<li class="selected"><div class="arrow"></div>applications</li>
-				<li><a href="aboutUs.html">about us</a></li>
+				<li><a href="what.html">about us</a></li>
 				<li><a href="contact.html">contact</a></li>
 			</ul>
 			<div class="greenLine"/>
 		</nav>
-		<section class="about">
+		<section class="main">
 			<span class="title">applications</span>
-			<div class="contentBox greenBg" style="height:165px;">
-				<span class="contentBoxTitle whiteText">standard replacements</span>
-				<span class="underline whiteBg"></span>
-				<span class="contentBoxContent greenText" style="display:none;">Our products can be used as direct replacements to standard building materials and because of its versatility, VitroBrick lends itself to a plethora of applications: Facades and rainscreens, tiling for bathrooms, showers, and countertops, interior and exterior decor, or architectural design elements in your garden; the possibilities are virtually limitless.</span>
+			<div class="column">
+				<div class="contentBox greenBg" style="height:165px;">
+					<span class="contentBoxTitle whiteText">standard replacements</span>
+					<span class="underline whiteBg"></span>
+					<p class="contentBoxContent greenText indent" style="display:none;">Our thin brick line has already passed the necessary requirements for compressive & flexural strength, weathering & durability, and dimensional tolerance. It can be used as a direct replacement to masonry for facades and rainscreens, both interior and exterior. We are also developing building brick, flat-panels and tile. </p>
+				</div>
+				<div class="contentBox greenBg" style="height: 100px">
+					<span class="contentBoxTitle whiteText">custom</span>
+					<span class="underline whiteBg"></span>
+					<p class="contentBoxContent greenText indent" style="display:none;">Our flexible manufacturing process and endless choice of colors, shapes, textures, and sizes, allows for a myriad of custom applications for green building professionals.</p>
+				</div>
 			</div>
-			<div class="contentBox greenBg" style="height:785px; float:right;">
-				<span class="contentBoxTitle whiteText">high performance</span>
-				<span class="underline whiteBg"></span>
-				<span class="contentBoxContent greenText" style="display:none;">Our performance brick represents disruptive technology for the green building industry. The unique micro-porous network within our products not only allows them to retain moisture, but they can actually wick water upwards, much like a sponge. In contrast, our products are very robust which provides a structural solution that can deliver fluids in a constant and uniform fashion, while reducing the expense and complication associated with pumps and sprayers.
+			<div class="column">
+				<div class="contentBox greenBg" style="height:280px;">
+					<span class="contentBoxTitle whiteText">high performance</span>
+					<span class="underline whiteBg"></span>
+					<p class="contentBoxContent greenText indent" style="display:none;">Our performance products represents disruptive technology for the green building industry. The applications we are currently developing, <span class="contentButton">evaporative cooling</span> and <span class="contentButton">living systems</span>, take advantage of the unique micro-porous network within our products. This advanced microstructure not only allows our products to retain moisture, but they can actually wick water upwards, much like a sponge. Nevertheless, our products are extremely robust, meeting ASTM standards for masonry products. In summary, our performance lines will offer structural solutions that, unlike the competition, can deliver fluids in a constant and uniform fashion, while reducing the expense and complication associated with pumps and sprayers.
+		</p>
+	</div>
+				</div>
+			</div>
+			
+			<div id="evaporativecooling" class="popup" style="height: 332px;"><span class="popupTitle">Evaporative Cooling</span><div class="greenClose"></div><span class="popupContent">In our cooling brick, the micro-pores can be used to retain water and this water can be used to cool structures through evaporation. This is particularly important for buildings that need to dissipate a lot of heat, such as computer data centers, hospitals, industrial facilities, or buildings located in hot climates around the world. In this application, fa&ccedil;ade or roofing materials are saturated with water and excess heat striking the surface is dissipated through natural evaporation. Water&#8217;s high heat capacity leads to effective and efficient transfer of large amounts of thermal energy by passive means alone. 
+Our research shows that this technology will reduce cooling energy consumption by up to 30% for a typical commercial building. Plus our material&#8217;s unsurpassed capillary action will virtually eliminate the reliance on pumps, leading to lower infrastructure, maintenance, water and energy costs. This translates to lower cooling costs and earns designers LEED points for energy efficiency.</span></div></div>
+			<div id="livingsystems" class="popup" style="height: 318px;"><span class="popupTitle">Living Systems</span><div class="greenClose"></div><span class="popupContent">The emerging field of living systems, which includes green roofs and green walls, is an arena in which our material&#8217;s water management capability has great potential. In these applications, our product simultaneously performs as a growth medium, a capillary mat, and a moisture retention substrate. EnVitrum has successfully cultivated over two dozen species of plants using our material alone.
 
-<div>Cooling Brick</div>
-<div>
-In our cooling brick, the micro-pores can be used to retain water and this water can be used to cool structures through evaporation. This is particularly important for buildings that need to dissipate a lot of heat, such as computer data centers, hospitals, industrial facilities, or buildings located in hot climates around the world. In this application, fa&ccedil;ade or roofing materials are saturated with water and excess heat striking the surface is dissipated through natural evaporation. Water&rsquo;s high heat capacity leads to effective and efficient transfer of large amounts of thermal energy by passive means alone. Our research shows that this technology will reduce cooling energy consumption by up to 30% for a typical commercial building. Plus our material&rsquo;s unsurpassed capillary action will virtually eliminate the reliance on pumps, leading to lower infrastructure, maintenance, water and energy costs. This translates to lower cooling costs and earns designers LEED points for energy efficiency. 
-</div>
-<div>
-<div>Living Systems:</div>
-<div>The emerging field of living systems, which includes green roofs and green walls, is an arena in which VitroBrick&rsquo;s water management capability has great potential. In these applications, our product simultaneously performs as a growth medium, a capillary mat, and a moisture retention substrate. EnVitrum has successfully cultivated over two dozen species of plants using VitroBrick alone.
-The status quo for green roofs is a heavy and water intensive system consisting of up to 8 inches of soil, several layers of drainage substrate, and a complicated irrigation arrangement. VitroBrick combines the functions of these many layers into one, simple, lightweight product that provides constant and uniform hydration throughout the system. By minimizing gravitational leeching of water, VitroBrick can also greatly reduce the quantity of water necessary for maintaining a green roof.
-</div>
-</div>
-</span>
-			</div>
-			<div class="contentBox greenBg" style="height: 100px">
-				<span class="contentBoxTitle whiteText">custom</span>
-				<span class="underline whiteBg"></span>
-				<span class="contentBoxContent greenText" style="display:none;">Our flexible manufacturing process and endless choice of colors, shapes, textures, and sizes, allows for a myriad of custom applications for green building professionals.</span>
-			</div>
+The status quo for green roofs is a heavy and water intensive system consisting of up to 8 inches of soil, several layers of drainage substrate, and a complicated irrigation arrangement. Our material combines the functions of these many layers into one, simple, lightweight product that provides constant and uniform hydration throughout the system. By minimizing gravitational leeching of water, our material can also greatly reduce the quantity of water necessary for maintaining a green roof.</span></div></div>
 		</section>
 		<footer>
 		</footer>
 	
-		<!-- Either Modernizr OR the HTML5 Shiv script is required if you want IE compatability, AND you want to use the new, 
-			 more-semantic HTML5 elements (header, article, footer, etc) 
-			 - we've only included Modernizr; HTML5 Shiv can be found here: http://html5shiv.googlecode.com -->
-	
-		<!-- MODERNIZR: http://www.modernizr.com/ -->
-		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
-	
 		<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
-		<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
-		<script type="text/javascript">!window.jQuery && document.write(unescape('%3Cscript src="javascript/jquery-1.5.min.js"%3E%3C/script%3E'))</script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+		<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+		<script type="text/javascript">!window.jQuery && document.write(unescape('%3Cscript src="javascript/jquery-1.8.1.min.js"%3E%3C/script%3E'))</script>
 		<script type="text/javascript" src="javascript/functions.js"></script>
 
 		<!-- Dynamically load static content -->
@@ -112,11 +112,10 @@ The status quo for green roofs is a heavy and water intensive system consisting 
 			$(document).ready(function () {
 				loadStaticContent();
 
-				
 				$('.contentBox').hover(function(eventObject){
 					$(eventObject.currentTarget).find('.contentBoxContent').toggle();
 					
-					if($(eventObject.currentTarget).find('.contentBoxContent').css('display') == 'inline'){
+					if($(eventObject.currentTarget).find('.contentBoxContent').is(':visible')){
 						$(eventObject.currentTarget).find('.contentBoxTitle').addClass('greenText');
 						$(eventObject.currentTarget).find('.contentBoxTitle').removeClass('whiteText');
 						
@@ -135,6 +134,18 @@ The status quo for green roofs is a heavy and water intensive system consisting 
 						$(eventObject.currentTarget).find('.underline').addClass('whiteBg')
 						$(eventObject.currentTarget).find('.underline').removeClass('greenBg')
 					}
+					
+					
+					$(".contentButton").click(function(eventObject){
+						var id = $(this).text().replace(' ', '');
+						console.log(id);
+						$('#' + id).toggle(true);
+						$('#' + id).draggable();
+					});
+					
+					$('.greenClose').click(function(eventObject){
+						$(eventObject.currentTarget).parent().toggle(false);
+					});
 				});
 			});
 		</script>

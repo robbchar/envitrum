@@ -11,7 +11,7 @@
 			 www.phpied.com/conditional-comments-block-downloads/ -->
 		<!--[if IE]><![endif]-->
 	
-		<title>Envitrum - Progress</title>
+		<title>Envitrum - Core Team</title>
 	
 		<meta name="description" content="Envitrum description." />
 		<!-- Google will often use this as its description of your page/site. Make it good. -->
@@ -32,7 +32,7 @@
 		<!-- main.css is a gateway file. You will spend your time in core.css -->
 	
 		<link rel="stylesheet" href="css/_print/main.css" media="print" />
-		
+	
 		<!-- Either Modernizr OR the HTML5 Shiv script is required if you want IE compatability, AND you want to use the new, 
 			 more-semantic HTML5 elements (header, article, footer, etc) 
 			 - we&#8217;ve only included Modernizr; HTML5 Shiv can be found here: http://html5shiv.googlecode.com -->
@@ -54,32 +54,46 @@
 		<![endif]-->
 
 	</head>
-	<body id="progress" class="unselectable">
+	<body id="about" class="unselectable">
 		<header>
 		</header>
 		<nav>
 			<ul class="main">
 				<li><a href="index.html">home</a></li>
 				<li><a href="technology_why.html">technology</a></li>
-				<li class="selected"><div class="arrow"></div>progress</li>
+				<li><a href="progress.html">progress</li>
 				<li><a href="applications.html">applications</a></li>
-				<li><a href="what.html">about us</a></li>
+				<li class="selected"><div class="arrow"></div>about us</li>
 				<li><a href="contact.html">contact</a></li>
 			</ul>
 			<ul class="sub">
-				<li class="selected">progress</li>
-				<li><a href="news.html">news</a></li>
+				<li><a href="what.html">what do we do?</a></li>
+				<li class="selected">core team</li>
+				<li><a href="team_advisory_corporate.html">advisory board - corporate advisors</a></li>
+				<li><a href="team_advisory_technical.html">advisory board - technical advisors</a></li>
 			</ul>
 			<div class="greenLine"/>
 		</nav>
 		<section class="main">
-			<span class="title">progress</span>
-			<div class="newsBox">
-				<p class="contentBoxContent greenText indent">Our technology took the Grand Prize at the 2010 Environmental Innovation Challenge, while our commercialization strategy earned us the &#8220;Best Clean Tech Award&#8221; at the 2010 UW Business Plan Competition and national recognition as Semifinalists in the 2010 Cleantech Open competition. In June of 2011, we filed an international patent application through the UW, for which EnVitrum holds the worldwide exclusive licensing option. This patent will protect our novel manufacturing process, as well as a number of applications for our innovative recycled glass material.</p>
-				<p class="contentBoxContent greenText indent">We have continued to develop our technology and recently completed research under two prestigious awards. The first was a UW C4C Commercialization Gap Fund grant that focused on process optimization, manufacturing scale-up and preliminary mechanical testing. The second was a Phase I Small Business Research Innovation Grant awarded through the National Science Foundation.</p>
-				<p class="contentBoxContent greenText indent">The overall results of our NSF SBIR Phase I project provide conclusive evidence that materials created through our proprietary process can meet or exceed the performance requirements of masonry products. Further, these results demonstrate that our material can be used in a broader range of applications than initially thought; a suite of both interior and exterior applications are viable. The results of our Phase I project have provided the data necessary to move forward with the commercialization of our technology. Having established the feasibility of this technology, EnVitrum intends to adapt the process to industrial scale manufacturing.</p>
-				<p class="contentBoxContent greenText indent">This research has enabled EnVitrum to move forward with a number of demonstration projects in collaboration with the architectural community. The firm <a href="http://www.perkinswill.com/work/perkins%2Bwill-seattle-office.html">Perkins+Will</a> is currently designing an interior living wall that will be displayed in their Seattle office.</p>
-            </div>
+			<span class="title">core team</span>
+			<div class="coreMember">
+				<div class="memberBox greenBg">
+					<span class="memberName whiteText">Renuka Prabhakar</span>
+					<span class="memberTitle whiteText">President & CEO</span>
+				</div>
+				<div class="memberContent">
+					Ms. Prabhakar has over 15 years of experience in operations management within the manufacturing and repair industries, including 6 years of experience as a small business owner. Ms. Prabhakar’s expertise is in process optimization and quality assurance. Throughout her career, Ms. Prabhakar has successfully developed and implemented innovative manufacturing strategies for new products. She has played significant roles in product development and design. Ms. Prabhakar has also worked with NASA, where her focus was R&D of advanced materials and processes.  
+				</div>
+			</div>
+			<div class="coreMember">
+				<div class="memberBox greenBg">
+					<span class="memberName whiteText">Grant Marchelli</span>
+					<span class="memberTitle whiteText">E.I.T., M.S. - CTO</span>
+				</div>
+				<div class="memberContent">
+					Mr. Marchelli is a two-time Xerox Technical Fellow and was the Principal Investigator for EnVitrum’s NSF Phase I SBIR and UW’s CGF grants. Over the past four years, his focus has been on the development and mechanical characterization of ceramic and glass materials. Mr. Marchelli has developed a number of theoretical models for novel material systems. He was also nominated for the 2010 UW Innovator Award in Research for contributions to the scientific understanding of micro-scale ceramic and glass behavior.
+				</div>
+			</div>
 		</section>
 		<footer>
 		</footer>
@@ -87,14 +101,15 @@
 		<!-- Grab Google CDN&#8217;s jQuery. fall back to local if necessary -->
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 		<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
-		<script type="text/javascript">!window.jQuery && document.write(unescape('%3Cscript src="javascript/jquery-1.8.1.min.js"%3E%3C/script%3E'))</script>
+		<script type="text/javascript">!window.jQuery && document.write(unescape('%3Cscript src="javascript/jquery-1.8.1.min.js"%3E%3C/script%3E&'))</script>
 		<script type="text/javascript" src="javascript/functions.js"></script>
 
 		<!-- Dynamically load static content -->
 		<script type="text/javascript">
 			$(document).ready(function () {
 				loadStaticContent();
-				
+
+				$(".draggable-boxes").draggable();
 			});
 		</script>
 	</body>

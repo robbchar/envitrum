@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+<!-- the "no-js" class is for Modernizr. -->
+
+	<head class="html5reset-kitchensink-commented">
+
+		<meta charset="utf-8" />
+	
+		<!-- This prevents the conditional comments below from holding up the page load
+			 www.phpied.com/conditional-comments-block-downloads/ -->
+		<!--[if IE]><![endif]-->
+	
+		<title>Envitrum - Technical Advisors</title>
+	
+		<meta name="description" content="Envitrum description." />
+		<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+		<meta name="author" content="Envitrum" />
+		<meta name="copyright" content="Copyright Envitrum 2012. All Rights Reserved." />
+
+		<meta name="google-site-verification" content="" />
+		<!-- Speaking of Google, don&#8217;t forget to set your site up: http://google.com/webmasters -->
+	
+		<link rel="icon" type="image/png" href="http://www.envitrum.com/favicon.png" />
+		<!-- This is the traditional favicon.
+			 - size: 16x16 or 32x32
+			 - transparency is OK
+			 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+	
+		<link rel="stylesheet" href="css/main.css" />
+		<!-- main.css is a gateway file. You will spend your time in core.css -->
+	
+		<link rel="stylesheet" href="css/_print/main.css" media="print" />
+	
+		<!-- Either Modernizr OR the HTML5 Shiv script is required if you want IE compatability, AND you want to use the new, 
+			 more-semantic HTML5 elements (header, article, footer, etc) 
+			 - we&#8217;ve only included Modernizr; HTML5 Shiv can be found here: http://html5shiv.googlecode.com -->
+	
+		<!-- MODERNIZR: http://www.modernizr.com/ -->
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+	
+		<!-- These are IE-specific conditional style sheets. 
+			 You might consider removing the ones you don&#8217;t end up using. -->
+		 
+		<!--[if IE]>
+		<link rel="stylesheet" href="css/patches/win-ie-all.css" />
+		<![endif]-->
+		<!--[if IE 7]>
+		<link rel="stylesheet" href="css/patches/win-ie7.css" />
+		<![endif]-->
+		<!--[if lt IE 7]>
+		<link rel="stylesheet" href="css/patches/win-ie-old.css" />
+		<![endif]-->
+
+	</head>
+	<body id="technical" class="unselectable">
+		<header>
+		</header>
+		<nav>
+			<ul class="main">
+				<li><a href="index.html">home</a></li>
+				<li><a href="technology_why.html">technology</li>
+				<li><a href="progress.html">progress</a></li>
+				<li><a href="applications.html">applications</a></li>
+				<li class="selected"><div class="arrow"></div>about us</li>
+				<li><a href="contact.html">contact</a></li>
+			</ul>
+			<ul class="sub">
+				<li><a href="what.html">what do we do?</a></li>
+				<li><a href="core.html">core team</a></li>
+				<li><a href="team_advisory_corporate.html">advisory board - corporate advisors</a></li>
+				<li class="selected">advisory board - technical advisors</li>
+			</ul>		
+			<div class="greenLine"/>
+		</nav>
+		<section class="main">
+			<span class="title">advisory board - technical advisors</span>
+            <span class="content" style="width: 600px; font-size: 16px;">EnVitrum draws knowledge from an experienced and well-rounded advisory board consisting of individuals with expertise in all relevant disciplines.</span>
+
+			<div>
+				<div class="advisoryMember greenBg">
+					<span class="memberName whiteText">Dr. Mamidala Ramulu</span>
+					<span class="memberTitle whiteText">Professor of Mechanical Engineering, University of Washington</span>
+					<span class="underline whiteBg"></span>
+					<span class="memberContent">
+						Dr. Ramulu is a member of the Mechanical Engineering Department&#8217;s Senior Faculty. He is a Presidential Young Investigator and a Fellow of the American Society of Mechanical Engineers. Dr. Ramulu&#8217;s research interests include solid mechanics and advanced manufacturing processes.  His main research activities focus on the field fracture mechanics and its implications in manufacturing engineering.
+					</span>
+				</div>
+				<div class="advisoryMember greenBg">
+					<span class="memberName whiteText">Dr. Per Reinhall</span>
+					<span class="memberTitle whiteText">Mechanical Engineering Department Chair, University of Washington</span>
+					<span class="underline whiteBg"></span>
+					<span class="memberContent">
+						Dr. Reinhall&#8217;s most recent research focuses on decreasing the environmental impact of marine construction equipment. Dr. Reinhall has a particular interest in the convergence of technology and commercialization. He has been a founding member in a number of successful technology start-ups. As Department Chair, Dr. Reinhall has been instrumental in promoting entrepreneurship within the engineering community.
+					</span>
+				</div>
+			</div>
+		</section>
+		<footer>
+		</footer>
+	
+		<!-- Grab Google CDN&#8217;s jQuery. fall back to local if necessary -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+		<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+		<script type="text/javascript">!window.jQuery && document.write(unescape('%3Cscript src="javascript/jquery-1.8.1.min.js"%3E%3C/script%3E&'))</script>
+		<script type="text/javascript" src="javascript/functions.js"></script>
+
+		<!-- Dynamically load static content -->
+		<script type="text/javascript">
+			$(document).ready(function () {
+				loadStaticContent();
+
+				$('.advisoryMember').hover(function(eventObject){
+					$(eventObject.currentTarget).find('.memberContent').toggle(true);
+					
+					$(eventObject.currentTarget).find('.memberName').addClass('greenText');
+					$(eventObject.currentTarget).find('.memberName').removeClass('whiteText');
+					
+					$(eventObject.currentTarget).find('.memberTitle').addClass('greenText');
+					$(eventObject.currentTarget).find('.memberTitle').removeClass('whiteText');
+					
+					$(eventObject.currentTarget).removeClass('greenBg')
+					$(eventObject.currentTarget).addClass('whiteBg')
+					
+					$(eventObject.currentTarget).find('.underline').removeClass('whiteBg')
+					$(eventObject.currentTarget).find('.underline').addClass('greenBg')
+				},
+				function(eventObject){
+					$(eventObject.currentTarget).find('.memberContent').toggle(false);
+						
+					$(eventObject.currentTarget).find('.memberName').addClass('whiteText');
+					$(eventObject.currentTarget).find('.memberName').removeClass('greenText');
+					
+					$(eventObject.currentTarget).find('.memberTitle').addClass('whiteText');
+					$(eventObject.currentTarget).find('.memberTitle').removeClass('greenText');
+					
+					$(eventObject.currentTarget).removeClass('whiteBg')
+					$(eventObject.currentTarget).addClass('greenBg')
+					
+					$(eventObject.currentTarget).find('.underline').addClass('whiteBg')
+					$(eventObject.currentTarget).find('.underline').removeClass('greenBg')
+				});
+			});
+		</script>
+	</body>
+</html>

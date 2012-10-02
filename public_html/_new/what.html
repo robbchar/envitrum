@@ -11,13 +11,13 @@
 			 www.phpied.com/conditional-comments-block-downloads/ -->
 		<!--[if IE]><![endif]-->
 	
-		<title>Envitrum index</title>
+		<title>Envitrum - What we do</title>
 	
 		<meta name="description" content="Envitrum description." />
 		<!-- Google will often use this as its description of your page/site. Make it good. -->
 	
 		<meta name="author" content="Envitrum" />
-		<meta name="copyright" content="Copyright Envitrum 2011. All Rights Reserved." />
+		<meta name="copyright" content="Copyright Envitrum 2012. All Rights Reserved." />
 
 		<meta name="google-site-verification" content="" />
 		<!-- Speaking of Google, don&#8217;t forget to set your site up: http://google.com/webmasters -->
@@ -33,6 +33,13 @@
 	
 		<link rel="stylesheet" href="css/_print/main.css" media="print" />
 	
+		<!-- Either Modernizr OR the HTML5 Shiv script is required if you want IE compatability, AND you want to use the new, 
+			 more-semantic HTML5 elements (header, article, footer, etc) 
+			 - we&#8217;ve only included Modernizr; HTML5 Shiv can be found here: http://html5shiv.googlecode.com -->
+	
+		<!-- MODERNIZR: http://www.modernizr.com/ -->
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+	
 		<!-- These are IE-specific conditional style sheets. 
 			 You might consider removing the ones you don&#8217;t end up using. -->
 		 
@@ -47,46 +54,39 @@
 		<![endif]-->
 
 	</head>
-	<body id="about">
+	<body id="what" class="unselectable">
 		<header>
 		</header>
 		<nav>
 			<ul class="main">
 				<li><a href="index.html">home</a></li>
-				<li class="selected"><div class="arrow"></div>technology</li>
+				<li><a href="technology_why.html">technology</a></li>
 				<li><a href="progress.html">progress</a></li>
 				<li><a href="applications.html">applications</a></li>
-				<li><a href="aboutUs.html">about us</a></li>
+				<li class="selected"><div class="arrow"></div>about us</li>
 				<li><a href="contact.html">contact</a></li>
 			</ul>
 			<ul class="sub">
-				<li class="selected">what we do.</a></li>
-				<li><a href="technology_why.html">why does it matter?</a></li>
-				<li><a href="technology_how.html">how does it work?</a></li>
-				<li><a href="faq.html">frequently asked questions</a></li>
+				<li class="selected">what do we do?</li>
+				<li><a href="core.html">core team</a></li>
+				<li><a href="team_advisory_corporate.html">advisory board - corporate advisors</a></li>
+				<li><a href="team_advisory_technical.html">advisory board - technical advisors</a></li>
 			</ul>
 			<div class="greenLine"/>
 		</nav>
-		<section class="about">
+		<section class="main">
 			<span class="title">what do we do?</span>
-			<div class="mainContent">EnVitrum is a product development company focusing on the advancement of building materials made from glass waste streams. 
-
-In 2010, the EPA estimated that over 70% of the glass collected by municipal facilities was not actually recycled; this equated to over 8 million tons of glass. We have pioneered a process that converts glass, regardless of color, shape, or contaminants, into a durable, porous building material that can be shaped to meet many architectural needs. Applications span the commercial, residential, and industrial building sectors. We call this material VitroBrick.
+			<div class="whatContent"><div class="content">EnVitrum is a product development company focusing on bettering the environment through the advancement of building materials made from glass waste streams.</div>
+ 
+<div class="content">In 2010, the EPA estimated that over 70% of the glass collected by municipal facilities was not actually recycled; this equated to over 8 million tons of glass. EnVitrum has pioneered a process that converts glass, regardless of color, shape, or contaminants, into a durable, porous building material that can be shaped to meet many architectural needs. Applications span the commercial, residential, commercial and industrial building sectors.</div>
 		</section>
 		<footer>
 		</footer>
 	
-		<!-- Either Modernizr OR the HTML5 Shiv script is required if you want IE compatability, AND you want to use the new, 
-			 more-semantic HTML5 elements (header, article, footer, etc) 
-			 - we&#8217;ve only included Modernizr; HTML5 Shiv can be found here: http://html5shiv.googlecode.com -->
-	
-		<!-- MODERNIZR: http://www.modernizr.com/ -->
-		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
-	
 		<!-- Grab Google CDN&#8217;s jQuery. fall back to local if necessary -->
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
-		<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
-		<script type="text/javascript">!window.jQuery && document.write(unescape('%3Cscript src="javascript/jquery-1.5.min.js"%3E%3C/script%3E&'))</script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+		<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+		<script type="text/javascript">!window.jQuery && document.write(unescape('%3Cscript src="javascript/jquery-1.8.1.min.js"%3E%3C/script%3E&'))</script>
 		<script type="text/javascript" src="javascript/functions.js"></script>
 
 		<!-- Dynamically load static content -->
